@@ -1,1 +1,80 @@
-<tip-calculator-nx-welcome></tip-calculator-nx-welcome>
+<img id="logo" src="assets/logo.svg" alt="logo" />
+
+<div class="card">
+  <div class="left-side">
+    <div class="fieldset">
+      <label for="bill">Bill</label>
+
+      <input id="bill" [(ngModel)]="bill" />
+    </div>
+
+    <div class="fieldset">
+      <label for="tip">Select Tip %</label>
+      <div class="tip-amount">
+        <button
+          (click)="selectTip(5)"
+          class="tip-button"
+          [class.selected]="getSelectedTip() === 5"
+        >
+          5%
+        </button>
+        <button
+          (click)="selectTip(10)"
+          class="tip-button"
+          [class.selected]="getSelectedTip() === 10"
+        >
+          10%
+        </button>
+        <button
+          (click)="selectTip(15)"
+          class="tip-button"
+          [class.selected]="getSelectedTip() === 15"
+        >
+          15%
+        </button>
+        <button
+          (click)="selectTip(25)"
+          class="tip-button"
+          [class.selected]="getSelectedTip() === 25"
+        >
+          25%
+        </button>
+        <button
+          (click)="selectTip(50)"
+          class="tip-button"
+          [class.selected]="getSelectedTip() === 50"
+        >
+          50%
+        </button>
+        <input
+          id="tip"
+          [ngModel]="selectedTip"
+          (ngModelChange)="selectTip($event)"
+        />
+      </div>
+    </div>
+
+    <div class="fieldset">
+      <label for="people">Number of People</label>
+      <input id="people" [(ngModel)]="people" />
+    </div>
+  </div>
+  <div class="right-side">
+    <div>
+      <div>
+        <span class="big-label">Tip Amount</span>
+        <span class="small-label">/ person</span>
+      </div>
+      <div class="total-amount">{{ tipAmount | currency }}</div>
+    </div>
+    <div>
+      <div>
+        <span class="big-label">Total</span>
+        <span class="small-label">/ person</span>
+      </div>
+      <div class="total-amount">{{ total | currency }}</div>
+    </div>
+
+    <button id="reset" (click)="reset()">Reset</button>
+  </div>
+</div>

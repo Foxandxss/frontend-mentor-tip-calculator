@@ -1,0 +1,124 @@
+#logo {
+  width: 86px;
+  height: 53px;
+  margin: 0 auto;
+  margin-top: 163px;
+}
+
+.big-label {
+  display: block;
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.small-label {
+  font-size: 13px;
+  color: var(--color-grayish-cyan);
+}
+
+.card {
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 88px;
+  background-color: var(--color-white);
+  width: 920px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .left-side {
+    margin: 32px;
+
+    .fieldset {
+      label {
+        display: block;
+        font-size: 16px;
+        color: var(--color-dark-grayish-cyan);
+        margin-bottom: 6px;
+      }
+
+      input {
+        background-color: var(--color-very-light-grayish-cyan);
+        border: none;
+        height: 48px;
+        text-align: right;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 24px;
+        width: 100%;
+        color: var(--color-dark-cyan);
+
+        &#bill {
+          background-image: url('/assets/icon-dollar.svg');
+          background-size: 10px 16px;
+          background-repeat: no-repeat;
+          background-position: 15px 16px;
+        }
+
+        &#people {
+          background-image: url('/assets/icon-person.svg');
+          background-size: auto;
+          background-repeat: no-repeat;
+          background-position: 15px 16px;
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 40px;
+      }
+    }
+
+    .tip-amount {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+
+      .tip-button {
+        background-color: var(--color-dark-cyan);
+        color: var(--color-white);
+        border: none;
+        border-radius: 5px;
+        height: 48px;
+        font-size: 24px;
+
+        &.selected {
+          background-color: var(--color-primary);
+          color: var(--color-dark-cyan);
+        }
+      }
+    }
+  }
+
+  .right-side {
+    margin: 32px;
+    border-radius: 15px;
+    background-color: var(--color-dark-cyan);
+    padding: 40px;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      .total-amount {
+        color: var(--color-primary);
+        font-size: 48px;
+        line-height: 71px;
+      }
+    }
+
+    #reset {
+      width: 100%;
+      background-color: var(--color-primary);
+      color: var(--color-dark-cyan);
+      border: none;
+      height: 48px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-top: 80px;
+    }
+  }
+}
