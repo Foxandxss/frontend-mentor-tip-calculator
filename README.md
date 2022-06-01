@@ -1,105 +1,114 @@
+# Frontend Mentor - Tip calculator app solution
 
+This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-# TipCalculator
+## Table of contents
 
-This project was generated using [Nx](https://nx.dev).
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-🔎 **Smart, Fast and Extensible Build System**
+## Overview
 
-## Quick Start & Documentation
+### The challenge
 
-[Nx Documentation](https://nx.dev/angular)
+Users should be able to:
 
-[10-minute video showing all Nx features](https://nx.dev/getting-started/intro)
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Calculate the correct tip and total cost of the bill per person
 
-[Interactive Tutorial](https://nx.dev/tutorial/01-create-application)
+### Screenshot
 
-## Adding capabilities to your workspace
+![](./screenshot.jpg)
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
-Below are our core plugins:
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+### Links
 
-## Generate an application
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-Run `ng g @nrwl/angular:app my-app` to generate an application.
+## My process
 
-> You can use any of the plugins above to generate applications as well.
+### Built with
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
 
-## Generate a library
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
+### What I learned
 
-> You can also use any of the plugins above to generate libraries as well.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-Libraries are shareable across libraries and applications. They can be imported from `@tip-calculator/mylib`.
+To see how you can add code snippets, see below:
 
-## Development server
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
 
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
 
-## Code scaffolding
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉');
+};
+```
 
-Run `ng g component my-component --project=my-app` to generate a new component.
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-## Build
+**Note: Delete this note and the content within this section and replace with your own learnings.**
 
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Continued development
 
-## Running unit tests
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
-Run `nx affected:test` to execute the unit tests affected by a change.
+### Useful resources
 
-## Running end-to-end tests
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
+**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
+## Author
 
-## Understand your workspace
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-Run `nx graph` to see a diagram of the dependencies of your projects.
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Further help
+## Acknowledgments
 
-Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-
-
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

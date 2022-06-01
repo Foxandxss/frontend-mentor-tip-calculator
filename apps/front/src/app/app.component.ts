@@ -8,25 +8,28 @@ import { Component } from '@angular/core';
 export class AppComponent {
   tipAmount = 0;
   total = 0;
-  _people = 1;
+  _people?: number;
+  _bill?: number;
 
-  set people(value: number) {
+  set people(value: number | undefined) {
     this._people = value;
-    this.calculate();
+    if (value) {
+      this.calculate();
+    }
   }
 
-  get people(): number {
+  get people(): number | undefined {
     return this._people;
   }
 
-  _bill = 0;
-
-  set bill(value: number) {
+  set bill(value: number | undefined) {
     this._bill = value;
-    this.calculate();
+    if (value) {
+      this.calculate();
+    }
   }
 
-  get bill(): number {
+  get bill(): number | undefined {
     return this._bill;
   }
 
@@ -42,13 +45,22 @@ export class AppComponent {
   }
 
   calculate() {
+    if (!this.bill || !this.people) {
+      return;
+    }
     this.tipAmount = (this.bill * (this.selectedTip / 100)) / this.people;
     this.total = this.bill / this.people + this.tipAmount;
   }
 
   reset() {
-    this.bill = 0;
-    this.people = 1;
-    this.selectedTip = 0;
+    this.bill = undefined;
+    this.people = undefined;
+    this.selectedTip = 5;
+    this.tipAmount = 0;
+    this.total = 0;
+  }
+
+  resetDisabled() {
+    return !this.bill || !this.people;
   }
 }

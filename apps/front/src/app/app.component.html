@@ -5,7 +5,7 @@
     <div class="fieldset">
       <label for="bill">Bill</label>
 
-      <input id="bill" [(ngModel)]="bill" />
+      <input id="bill" [(ngModel)]="bill" placeholder="0" />
     </div>
 
     <div class="fieldset">
@@ -55,8 +55,24 @@
     </div>
 
     <div class="fieldset">
-      <label for="people">Number of People</label>
-      <input id="people" [(ngModel)]="people" />
+      <div class="label-with-error">
+        <label for="people">Number of People</label>
+        <div
+          *ngIf="
+            peopleInput.invalid && (peopleInput.dirty || peopleInput.touched)
+          "
+          class="error"
+        >
+          Can't be zero
+        </div>
+      </div>
+      <input
+        id="people"
+        #peopleInput="ngModel"
+        [(ngModel)]="people"
+        placeholder="0"
+        required
+      />
     </div>
   </div>
   <div class="right-side">
@@ -75,6 +91,8 @@
       <div class="total-amount">{{ total | currency }}</div>
     </div>
 
-    <button id="reset" (click)="reset()">Reset</button>
+    <button id="reset" (click)="reset()" [disabled]="resetDisabled()">
+      Reset
+    </button>
   </div>
 </div>
