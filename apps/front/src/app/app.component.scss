@@ -22,7 +22,7 @@
   margin: 0 auto;
   margin-top: 88px;
   background-color: var(--color-white);
-  width: 920px;
+  max-width: 920px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -145,6 +145,42 @@
 
       &:disabled {
         background-color: #0d686d;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #logo {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .card {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    max-height: 800px;
+    margin-top: 40px;
+
+    .left-side {
+      margin: 24px;
+      .tip-amount {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .right-side {
+      margin: 24px;
+      padding: 30px;
+      padding-bottom: 24px;
+      > div {
+        margin-bottom: 20px;
+        .total-amount {
+          font-size: 32px;
+        }
+      }
+
+      #reset {
+        margin-top: 7px;
       }
     }
   }
